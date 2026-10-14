@@ -100,7 +100,25 @@ const VERIFICATION = {
   "errors": 0,
   "skipped": 0,
   "provider_calls": 0,
-  "github_actions": "configured, not run",
+  "github_actions": {
+    "status_at_local_verification": "configured, not run",
+    "subsequent_verification": {
+      "conclusion": "success",
+      "workflow": "Verify reference lab",
+      "run_id": 38595723539,
+      "run_updated_at": "2026-10-14T16:10:20Z",
+      "checked_at": "2026-10-14T16:39:14.906923+00:00",
+      "head_sha": "c5f390a948c4ef94a26fdc18ae0ec7018db0c2db",
+      "url": "https://github.com/Amyvdev1/webhook-trust-lab/actions/runs/38595723539",
+      "matrix": [
+        "ubuntu-latest / Python 3.11",
+        "ubuntu-latest / Python 3.14",
+        "windows-latest / Python 3.11",
+        "windows-latest / Python 3.14"
+      ],
+      "note": "All four jobs passed. This dated hosted result supplements the original local observation; it is not a continuously refreshed status."
+    }
+  },
   "command": "python -m unittest -v",
   "source_sha256": {
     "webhook_security.py": "f68bba507bca93cb96d63caacaf0df76f04fab4fa0c10fb5a494d7ff7536a196",
