@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-14T15:40:08.384758+00:00",
+  "python": "3.14.3",
+  "platform": "Windows",
+  "tests": 39,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "provider_calls": 0,
+  "github_actions": "configured, not run",
+  "command": "python -m unittest -v",
+  "source_sha256": {
+    "webhook_security.py": "f68bba507bca93cb96d63caacaf0df76f04fab4fa0c10fb5a494d7ff7536a196",
+    "test_webhook_security.py": "665b05f38596bda9c3b78330a9d38bf4963f1da60867dfad535d68d6f7447b93",
+    "demo.py": "55da261c68d49d0b7e2aa57c3b1ca01a1d02ff642b9df7cb21f9e9fe436eb281"
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.sqlite*
+tmp*/
+media/raw/
+.env
+.env.*
+!.env.example

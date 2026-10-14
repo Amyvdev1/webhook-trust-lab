@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-10-14T15:47:13.259770+00:00",
+  "archive_extraction": "fresh isolated directory",
+  "manifest": "all extracted entries match SHA-256",
+  "tests": 39,
+  "failures": 0,
+  "errors": 0,
+  "demo_matches_recorded_evidence": true,
+  "core_sha256": {
+    "webhook_security.py": "f68bba507bca93cb96d63caacaf0df76f04fab4fa0c10fb5a494d7ff7536a196",
+    "test_webhook_security.py": "665b05f38596bda9c3b78330a9d38bf4963f1da60867dfad535d68d6f7447b93",
+    "demo.py": "55da261c68d49d0b7e2aa57c3b1ca01a1d02ff642b9df7cb21f9e9fe436eb281"
+  }
+}

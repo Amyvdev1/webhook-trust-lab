@@ -1,0 +1,9 @@
+{
+  "desktop": "1440x1080",
+  "mobile": "390x844",
+  "scenariosChecked": 9,
+  "exportMatches": true,
+  "horizontalOverflow": false,
+  "pageErrors": [],
+  "recording": "Actual browser interactions with recorded Python evidence; silent; no burned-in subtitles"
+}

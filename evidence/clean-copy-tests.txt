@@ -1,0 +1,45 @@
+Failed to find real location of C:\Python314\python.exe
+test_business_schema_rejection_without_write (test_webhook_security.PersistenceTests.test_business_schema_rejection_without_write) ... ok
+test_conflict_preserves_original (test_webhook_security.PersistenceTests.test_conflict_preserves_original) ... ok
+test_failure_after_claim_rolls_back_then_retry_succeeds (test_webhook_security.PersistenceTests.test_failure_after_claim_rolls_back_then_retry_succeeds) ... ok
+test_failure_after_local_effect_rolls_back_both (test_webhook_security.PersistenceTests.test_failure_after_local_effect_rolls_back_both) ... ok
+test_first_delivery_and_duplicate (test_webhook_security.PersistenceTests.test_first_delivery_and_duplicate) ... ok
+test_invalid_json_does_not_poison_event_id (test_webhook_security.PersistenceTests.test_invalid_json_does_not_poison_event_id) ... ok
+test_new_event_is_independent (test_webhook_security.PersistenceTests.test_new_event_is_independent) ... ok
+test_reopening_database_retains_dedup (test_webhook_security.PersistenceTests.test_reopening_database_retains_dedup) ... ok
+test_resigned_retry_same_event (test_webhook_security.PersistenceTests.test_resigned_retry_same_event) ... ok
+test_simultaneous_conflicting_claims_preserve_one_winner (test_webhook_security.PersistenceTests.test_simultaneous_conflicting_claims_preserve_one_winner) ... ok
+test_simultaneous_deliveries_apply_one_local_effect (test_webhook_security.PersistenceTests.test_simultaneous_deliveries_apply_one_local_effect) ... ok
+test_body_limit_precedes_hmac (test_webhook_security.VerificationTests.test_body_limit_precedes_hmac) ... ok
+test_body_must_be_bytes (test_webhook_security.VerificationTests.test_body_must_be_bytes) ... ok
+test_body_tampering (test_webhook_security.VerificationTests.test_body_tampering) ... ok
+test_both_window_boundaries_are_inclusive (test_webhook_security.VerificationTests.test_both_window_boundaries_are_inclusive) ... ok
+test_duplicate_json_keys (test_webhook_security.VerificationTests.test_duplicate_json_keys) ... ok
+test_empty_key_is_configuration_error (test_webhook_security.VerificationTests.test_empty_key_is_configuration_error) ... ok
+test_event_id_tampering (test_webhook_security.VerificationTests.test_event_id_tampering) ... ok
+test_exact_byte_key_order_changes (test_webhook_security.VerificationTests.test_exact_byte_key_order_changes) ... ok
+test_exact_byte_whitespace_changes (test_webhook_security.VerificationTests.test_exact_byte_whitespace_changes) ... ok
+test_excessive_json_nesting_fails_with_structured_reason (test_webhook_security.VerificationTests.test_excessive_json_nesting_fails_with_structured_reason) ... ok
+test_freshness_alone_does_not_deduplicate (test_webhook_security.VerificationTests.test_freshness_alone_does_not_deduplicate) ... ok
+test_invalid_clock_configuration (test_webhook_security.VerificationTests.test_invalid_clock_configuration) ... ok
+test_invalid_ids (test_webhook_security.VerificationTests.test_invalid_ids) ... ok
+test_invalid_signature_format (test_webhook_security.VerificationTests.test_invalid_signature_format) ... ok
+test_invalid_timestamp_types (test_webhook_security.VerificationTests.test_invalid_timestamp_types) ... ok
+test_invalid_utf8 (test_webhook_security.VerificationTests.test_invalid_utf8) ... ok
+test_malformed_json (test_webhook_security.VerificationTests.test_malformed_json) ... ok
+test_non_object_json (test_webhook_security.VerificationTests.test_non_object_json) ... ok
+test_nonfinite_json (test_webhook_security.VerificationTests.test_nonfinite_json) ... ok
+test_oversized_integer_json_fails_with_structured_reason (test_webhook_security.VerificationTests.test_oversized_integer_json_fails_with_structured_reason) ... ok
+test_protocol_vector_independent_envelope (test_webhook_security.VerificationTests.test_protocol_vector_independent_envelope) ... ok
+test_signature_alone_accepts_replayed_bytes (test_webhook_security.VerificationTests.test_signature_alone_accepts_replayed_bytes) ... ok
+test_signature_checked_before_json_parser (test_webhook_security.VerificationTests.test_signature_checked_before_json_parser) ... ok
+test_timestamp_tampering (test_webhook_security.VerificationTests.test_timestamp_tampering) ... ok
+test_valid_delivery (test_webhook_security.VerificationTests.test_valid_delivery) ... ok
+test_validly_signed_future_message (test_webhook_security.VerificationTests.test_validly_signed_future_message) ... ok
+test_validly_signed_stale_message (test_webhook_security.VerificationTests.test_validly_signed_stale_message) ... ok
+test_wrong_shared_key (test_webhook_security.VerificationTests.test_wrong_shared_key) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 1.030s
+
+OK
