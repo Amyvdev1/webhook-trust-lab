@@ -4,10 +4,29 @@
 
 An independent application-security case study by Amy V. Follow one fictional invoice event through authentication, freshness, duplicate detection, and a local transaction. No external service, credentials, or payment is used.
 
+## Fresh-clone quickstart
+
+Requires Python 3.11+ with SQLite and Git. No dependency installation, credentials, or network requests are needed after cloning. Use a **local, unsynchronized folder** because the tests exercise SQLite transactions. On Windows, for example, start in `$env:LOCALAPPDATA`; avoid OneDrive and network shares.
+
+```sh
+git clone https://github.com/Amyvdev1/webhook-trust-lab.git
+cd webhook-trust-lab
+python -m unittest -v
+python demo.py --output output/scenarios.json
+```
+
+Use `python3` if your system names Python that way. Expect the test runner to finish with `OK`. The demo explains nine scenarios, including a valid replay accepted by the stateless verifier, a duplicate suppressed by the stateful consumer, and rollback without a committed local effect. Your new evidence is in `output/scenarios.json`; the checked-in evidence remains unchanged.
+
+**Inspect the result:** open `site/index.html` in your browser. This explorer displays the bundled recorded evidence; it does not run Python or automatically reload your newly generated JSON. Compare it with your local output when verifying behavior.
+
+**Try the key distinction:** compare “A signature is repeatable” with “Replay inside the window.” Authentication answers who signed these bytes. Stateful processing answers whether this event already completed locally. Neither is proof of an external payment.
+
+If Python cannot import `sqlite3`, install a Python distribution with SQLite support. For database locking or permission errors, move the clone to a writable local folder and rerun; do not disable the concurrency tests. No service needs to be left running after the demo.
+
 ## Review in five minutes
 
 1. Run `python -m unittest -v`.
-2. Run `python demo.py --output evidence/scenarios.json`.
+2. Run `python demo.py --output output/scenarios.json` to generate fresh evidence without replacing the recorded sample.
 3. Inspect [the nine recorded scenarios](evidence/scenarios.json).
 4. Inspect [the threat model](docs/threat-model.md) and [claims and evidence](docs/claims-and-evidence.md).
 5. Open `site/index.html` for the recorded-evidence explorer, or watch [the walkthrough with original music](media/walkthrough-with-music.mp4).
