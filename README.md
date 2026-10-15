@@ -99,3 +99,7 @@ MIT License. Copyright 2026 Amy V.
 [Portfolio case study](https://amy-villa-signal-gallery.vercel.app/projects/webhook-trust-lab) · [Recorded-evidence explorer](https://amy-villa-signal-gallery.vercel.app/project-media/webhook-trust-lab/site/index.html)
 
 The walkthrough records the local evidence explorer. The original instrumental score uses synthesized tones, no sampled recordings, and is included under this repository’s MIT license. There is no voiceover or burned-in subtitle track.
+
+## Writing collection
+
+[Read the three companion articles and download their designed PDFs](articles/README.md). The portfolio brings the writing, source, evidence and music-backed walkthrough together.
