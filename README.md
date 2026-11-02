@@ -1,3 +1,18 @@
+# Webhook Trust Lab — Deterministic Webhook Security & Replay Protection
+**Stack:** Python • SQLite • HMAC-SHA256 • Pytest | **Verification:** 39 Deterministic Security Tests & 9 Recorded Failure Scenarios
+
+### Architectural Overview
+Most webhook receivers verify cryptographic signatures without enforcing state-level replay boundaries or concurrent delivery locks. **Webhook Trust Lab** is a deterministic reference architecture that enforces end-to-end cryptographic and transactional trust before any downstream business logic executes.
+
+### Core Security Guarantees
+- **Cryptographic Verification:** Constant-time `HMAC-SHA256` payload signature validation.
+- **Replay Window Enforcement:** Signed timestamp validation rejecting expired or future-skewed events outside strict tolerance bounds.
+- **Idempotency & Concurrency Locking:** Persistent event identity ledger in SQLite preventing duplicate execution during parallel retry storms.
+- **Atomic State Rollbacks:** Full transactional rollback guarantees when downstream handlers fail mid-execution, preserving retry safety.
+
+
+---
+
 # Webhook Trust Lab
 
 **A valid signature is not replay protection. A duplicate record is not proof of a completed action.**
